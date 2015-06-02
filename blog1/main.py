@@ -27,8 +27,7 @@ class Post(db.Model):
 # the regex in the URL and if the post_id exists, the permalink page is displayed.
 class PostHandler(Handler):
     def get(self, post_id):
-        post_id = int(post_id)
-        p = Post.get_by_id(post_id)
+        p = Post.get_by_id(int(post_id))
         if p:
             self.render("post_perma.html", p = p)
 
