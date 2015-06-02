@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Nitin's Blog</title>
+	</head>
+
+	<body>
+		<h1 style="height: 50px">
+			Write new post
+		</h1>
+
+		<form method="post">
+		  subject<br><input type="text" name="subject" value="{{subject}}" size="70"><br><br>
+		  blog<br><textarea name="content" rows = "30" cols ="70">{{content}}</textarea><br>
+		  <div class="error">
+		  	{{error}}
+		  </div>
+		  <input type="submit" value="Submit">
+		</form>
+		
+
+	</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Nitin's Blog</title>
+	</head>
+
+	<body>
+		<h1 style="height: 50px">
+			Nitin's Blog
+		</h1>
+
+		<hr>
+
+		{% for post in posts %}
+			<div class="post">
+				<div class="post-subject">{{post.subject}}</div>
+				<pre class="post-content">{{post.content}}</pre>
+			</div>
+		{% endfor %}
+		
+
+	</body>
+
+</html>
